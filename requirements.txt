@@ -1,0 +1,6 @@
+# mediapipe 1.0.1 aborts on macOS when creating the hand landmarker ("Service is unavailable"),
+# so it is excluded. mediapipe already pulls in opencv-contrib-python; do NOT also install
+# opencv-python — the two packages overwrite each other's files.
+mediapipe>=0.10.35,!=1.0.1
+opencv-contrib-python>=4.9
+numpy>=1.26
